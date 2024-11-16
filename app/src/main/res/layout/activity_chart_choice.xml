@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/backgroundmain">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ohcroplogo"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/choice_charttitle_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TDS Reports"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/textcolor_violet"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageBtnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <Button
+            android:id="@+id/barchartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="bar chart"
+            android:background="@drawable/reports_button_color"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/reports_button_color"
+            android:drawableStart="@drawable/reports_chart_bar"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nunito_extrabold"/>
+        <Button
+            android:id="@+id/linechartbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Line Chart"
+            android:background="@drawable/reports_button_color"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/reports_button_color"
+            android:drawableStart="@drawable/reports_chart_line"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:visibility="visible"/>
+        <Button
+            android:id="@+id/piechartbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Pie chart"
+            android:background="@drawable/reports_button_color"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/reports_button_color"
+            android:drawableStart="@drawable/reports_chart_pie_"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/scatterplotbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Scatter Plot"
+            android:background="@drawable/reports_button_color"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/reports_button_color"
+            android:drawableStart="@drawable/reports_chart_scatter"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/radargraphbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Radar Graph"
+            android:background="@drawable/reports_button_color"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/reports_button_color"
+            android:drawableStart="@drawable/reports_chart_radar"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

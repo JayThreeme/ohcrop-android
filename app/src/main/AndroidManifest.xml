@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OHCrop"
+        tools:targetApi="31">
+        <activity
+            android:name=".howto.hydroponiccrops.HydroponicCrops"
+            android:exported="false" />
+        <activity
+            android:name=".howto.hydroponicsystems.HydroponicSystems"
+            android:exported="false" />
+        <activity
+            android:name=".howto.whatishydroponic.Whatishydroponic"
+            android:exported="false" />
+        <activity
+            android:name=".AddCrops"
+            android:exported="false" />
+        <activity
+            android:name=".calculator.masterblend.Masterblend"
+            android:exported="false" />
+        <activity
+            android:name=".calculator.watervolume.WaterVolume"
+            android:exported="false" />
+        <activity
+            android:name=".croptrack.croptrackerview.cropTrackerView"
+            android:exported="false" />
+        <activity
+            android:name=".croptrack.croptrackeradd.cropTrackerAdd"
+            android:exported="false"
+            android:parentActivityName=".CropTracker" />
+        <activity
+            android:name=".CropTracker"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".LiveMonitoring"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".reports.datareports.DataReports"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".calculator.nutrientsolution.NutrientSolutionMixing"
+            android:exported="false"
+            android:parentActivityName=".Calculator" />
+        <activity
+            android:name=".Calculator"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".control.fan.FanControl"
+            android:exported="false"
+            android:parentActivityName=".Control" />
+        <activity
+            android:name=".control.irrigation.IrrigationControl"
+            android:exported="false"
+            android:parentActivityName=".Control" />
+        <activity
+            android:name=".control.light.LightControl"
+            android:exported="false"
+            android:parentActivityName=".Control" />
+        <activity
+            android:name=".control.misting.MistingControl"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".control.misting.misting" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".control.watertank.WaterTankControl"
+            android:exported="false"
+            android:parentActivityName=".Control" />
+        <activity
+            android:name=".Live"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".reports.ChartChoice"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".reports.BarChart"
+            android:exported="false"
+            android:parentActivityName=".Reports" />
+        <activity
+            android:name=".howto.appnavigation.AppNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".howto.monitorandcontrol.MonitoringAndControl"
+            android:exported="false" />
+        <activity
+            android:name=".howto.monitoringsensors.MonitoringSensors"
+            android:exported="false" />
+        <activity
+            android:name=".Reports"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Control"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".CropTrack"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".HowTo"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Monitor"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Test"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

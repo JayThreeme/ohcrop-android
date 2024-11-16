@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/hydroponic1" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/hydroponic1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/hydroponic1" />
+
+    <TextView
+        android:id="@+id/textView345"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Slide Left / Right"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+
+</LinearLayout>

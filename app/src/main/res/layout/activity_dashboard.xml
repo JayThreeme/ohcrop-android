@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/backgroundmain">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/ohcropdevice"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteY="538dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageBtnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ohcroplogo" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Dashboard"
+                        android:textColor="@color/textcolor_violet"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageBtnProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/baseline_person_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/dashboardMonitorBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_monitor2"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Monitor"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/dashboardControlBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_on_off"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Control"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/dashboardCropTrack"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_track"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Crop Track"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginEnd="2dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dashboardReportBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_report"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Report"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/dashboardLiveBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_live"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Live"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/dashboardHowToBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_user_guide"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Know How"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/dashboardCalcBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_calculator"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Hydro Calc"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/dashboardSettingsBtn2"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:drawableTop="@drawable/dashboard_settings"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/blank3"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dashboard_button_menu_style"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nurture your plants with precision using OhCrop's advanced monitoring system and control system"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nunito_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/control_drawable_card"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OhCrop is your ultimate companion for hydroponic enthusiasts, offering a comprehensive monitoring and control system alongside a suite of essential features. Seamlessly manage your hydroponic setup, from nutrient levels to environmental conditions, ensuring optimal growth for your plants. With intuitive controls and real-time data insights, OhCrop empowers you to cultivate your green oasis with precision and ease. Revolutionize your hydroponic journey with OhCrop today!"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+
+                    android:fontFamily="@font/nunito_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/facebook" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/github" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/email" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/telegram" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/linkedin" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Rights Reserved @ 2024"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/blankTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

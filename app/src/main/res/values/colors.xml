@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent"></color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#747575</color>
+
+    <color name="hintcolor">#AEAEAE</color>
+
+    <color name="textcolor_green">#6EB244</color>
+    <color name="textcolor_violet">#905096</color>
+    <color name="textcolor_blue">#28AAE1</color>
+    <color name="textcolor_blue_dark">#1D6685</color>
+
+
+    <color name="purpleEnabled">#905196</color>
+    <color name="purplePressed">#C073C7</color>
+    <color name="purpleDefault">#905196</color>
+
+
+    <color name="croptrackgreenlight">#9DCB81</color>
+    <color name="croptrackgray">#A4A4A4</color>
+    <color name="croptrackblue">#55B2D9</color>
+    <color name="croptrackgreen">#6EB244</color>
+
+    <color name="controlblue">#9FDCD9</color>
+    <color name="controlblue2">#89c7c4</color>
+
+    <color name="reports_button_color">#1D6685</color>
+
+</resources>

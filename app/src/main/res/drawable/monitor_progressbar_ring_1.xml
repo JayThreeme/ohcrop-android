@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- First ring with a two-color gradient and a stroke -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:thickness="20dp"
+            android:useLevel="false">
+            <gradient
+                android:startColor="#4bb9c9"
+                android:endColor="#9fdcd9"
+                android:type="linear"
+                android:angle="-90"/>
+        </shape>
+    </item>
+
+    <!-- Second ring with a two-color gradient and a stroke -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:thickness="20dp">
+            <gradient
+                android:startColor="#6EB244"
+                android:endColor="#a7e381"
+                android:type="sweep"/>
+        </shape>
+    </item>
+</layer-list>

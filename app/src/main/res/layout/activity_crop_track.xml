@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/backgroundmain">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ohcroplogo"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Crop Track"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/textcolor_violet"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageBtnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/textcolor_violet">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+
+                        android:padding="5dp"
+                        android:text="Lettuce"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textDateToday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/textcolor_violet"
+                        android:padding="5dp"
+                        android:text="Date Today"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No. of Crops/Heads"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:id="@+id/ctNoOfCropText"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:padding="3dp"
+                        android:text="0"
+                        android:background="@color/white"/>
+
+                    <Button
+                        android:id="@+id/ctNoOfCropPLUS"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="+"
+                        android:background="@drawable/croptrack_setdate_button"
+                        android:padding="0dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp" />
+
+                    <Button
+                        android:id="@+id/ctNoOfCropMinus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:background="@drawable/croptrack_setdate_button"
+                        android:padding="0dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp" />
+                    <Button
+                        android:id="@+id/ctNoOfCropSet"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:text="Set"
+                        android:background="@drawable/croptrack_setdate_button"
+                        android:padding="0dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/croptrackgreenlight"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="Sowing"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ctSowingDaysCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:id="@+id/daystext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Days"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date: "
+                                android:textSize="16dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ctSowingStartDateText"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:textAlignment="textStart"
+                                android:background="@color/white"
+                                android:padding="2dp"/>
+
+                            <Button
+                                android:id="@+id/ctSowingStartDateButton"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:background="@drawable/croptrack_setdate_button"
+                                android:padding="0dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textView28"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="End Date: "
+                                android:textSize="16dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ctSowingEndDateText"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:background="@color/white"
+                                android:padding="2dp"/>
+
+                            <Button
+                                android:id="@+id/ctSowingEndDateButton"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/croptrack_setdate_button"
+                                android:padding="0dp"
+                                android:text="+"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="5dp"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/ctSowingSETBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SET"
+                            android:background="@drawable/croptrack_setdate_button"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/croptrackblue"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="Transplant"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ctTransplantDaysCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:id="@+id/daystext2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Days"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date: "
+                                android:textSize="16dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ctTranspltStartDateText"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:background="@color/white"
+                                android:padding="2dp"/>
+
+                            <Button
+                                android:id="@+id/ctTranspltStartDateButton"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/croptrack_setdate_button2"
+                                android:padding="0dp"
+                                android:text="+"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="End Date: "
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ctTranspltEndDateText"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:background="@color/white"
+                                android:padding="2dp"
+                                />
+
+                            <Button
+                                android:id="@+id/ctTranspltEndDateButton"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/croptrack_setdate_button2"
+                                android:padding="0dp"
+                                android:text="+"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/ctTransplantSETBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Set"
+                            android:background="@drawable/croptrack_setdate_button2"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/croptrackgray"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Harvest In" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="n/a" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Crop Yield" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="n/a" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No. of Crops" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="n/a" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "211063887219",
+    "firebase_url": "https://ohcrop-65556-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ohcrop-65556",
+    "storage_bucket": "ohcrop-65556.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211063887219:android:404a130ad15464602f6106",
+        "android_client_info": {
+          "package_name": "com.ohc.ohcrop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGPDxEukmxTgcV4t1Yt_9IAfcggogIpg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
